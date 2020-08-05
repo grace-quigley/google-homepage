@@ -1,8 +1,110 @@
 <!DOCTYPE html>
 <html>
 
+    <title>Google</title>
+    <head></head>
+    
+    <style>
 
+        .navbar {
+            display:block;
+            float:right;
+        }
 
+        nav li {
+            list-style:none;
+            display:inline;
+            padding-right:10px;
+            
+        }
+        .logo-container {
+            display:flex;
+            flex-direction:column;
+            width:100%;
+        }
+
+        #google-img {
+            width: 275px;
+            height:auto;
+            margin: 0 auto;
+            position:relative;
+            top:150px;
+        }
+
+        .search-box {
+            width:400px;
+            height:35px;
+            margin: 0 auto;
+            position:relative;
+            top:175px;
+            border-radius:20px;
+            border-color:grey;
+            opacity:.5;
+        }
+
+        .button-row {
+            display:grid;
+            grid-template-columns: 175px 175px;
+            column-gap:10px;
+            justify-content:center;
+            position:relative;
+            top:200px;
+        }
+
+        .buttons {
+            height:40px;
+        }
+
+        footer {
+            position:fixed;
+            bottom:0;
+            text-align:center;
+            width:100%;
+            margin-top:150px;
+        }
+        footer li {
+            list-style:none;
+            display:inline;
+            padding-right:15px;;
+
+       
+    </style>
+    
+    <body>
+        <div id="navbar">
+            <nav class = "navbar">
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Store</a></li>
+                    <li><a href="">Gmail</a></li>
+                    <li><a href="">Images</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="logo-container">
+            <img id="google-img" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+            <input type="text" class="search-box" id="search-box">
+        </div>
+        <div class="button-row">
+            <button class="buttons">Google Search</button>
+            <button>I'm Feeling Lucky</button>
+        </div>
+
+        <div id="footer-div">
+            <footer id="footer">
+                <ul>
+                    <li><a>Advertising</a></li>
+                    <li><a>Business</a></li>
+                    <li><a>How Search Works</a></li>
+                    <li><a>Privacy</a></li>
+                    <li><a>Terms</a></li>
+                    <li><a>Settings</a></li>
+                </ul>
+            </footer>
+
+        </div>
+    </body>
 
 
 
